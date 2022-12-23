@@ -5,133 +5,122 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <header>
-        <div>
-            <h1>
-                <marquee direction="down" behavior="scroll" style="height: 100px;" scrollamount="2">
-                    Registration Site</marquee>
-            </h1>
-        </div>
-
-    </header>
+    <title>Ticket Registeration</title>
 </head>
 
 <body>
-    <p>
-        Here, we provide <em style="color: green;">the best platform</em> for you to <u>register for a ticket.</u>
-        Support is appreciated though.. <a href="third.html" target="_blank">Click here for more</a>
-    </p>
-    <hr>
-    <p>
-    </p>
-    <table>
-        <caption style="color: red;">    Food items </caption>
-        <thead>
-            <tr>
-                <th>Dish</th>
-                <th>Cost Availability</th>
-            </tr>
-        </thead>
-        <tbody>
-            <td>Vada Pav</td>
-            <td>10 No</td>
-        </tbody>
-        <tbody>
-            <td>Pani puri</td>
-            <td>20 Yes</td>
-        </tbody>
-
-    </table>
-    <br>
-
-    <label for="name">
-
-        Enter your name &rarr; <input id="name" type="text" placeholder="Name">
-    </label>
-    <br>
-    <br>
-    <label for="destination">
-        
-
-        Enter your destination &rarr; <input id="destination" type="text" placeholder="Destination">
-    </label>
-    <br>
-    <br>
-   
-    <label for="dropdown">
-        <select id="dropdown">
-            <option>First class</option>
-            <option>Second class</option>
-            <option>third class</option>
-
-        </select>
-    </label>
-    
-    <div>
+    <header>
+        <marquee direction="down" style="height: 80px;" scrollamount="2">
+            <h1>Registeration Site</h1>
+        </marquee>
+        <hr>
+        <p>Here,<em>we provide <strong style="color: green;">the best platform</strong> for you to register for a
+                ticket.Support is appreciated though.. <a href="third.html" target="_blank">Click here for more</a>
+            </em> </p>
+    </header>
+    <main>
+        <section>
+            <div>
+                <table>
+                    <caption style="color: red; width: 200px;">Food Items</caption>
+                    <thead>
+                        <tr>
+                            <th>Dish</th>
+                            <th>Cost</th>
+                            <th>Availability</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>vada pav</td>
+                            <td>10</td>
+                            <td>NO</td>
+                        </tr>
+                        <tr>
+                            <td>pani puri</td>
+                            <td>20</td>
+                            <td>YES</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
         <br>
-        <label for="option1">
-            Male
-            <input type="radio" id="option1" name="gender">
-        </label>
-        <label for="option2">
-            Female
-            <input type="radio" name="gender" id="option2">
-        </label>
-        <label for="option3">
-            other
-            <input type="radio" name="gender" id="option3">
-        </label>
-    </div>
-
-    <div>
         <br>
-        <label for="type1">
-            Veg
-            <input type="checkbox" name="type" id="type1">
-        </label>
-        <label for="type2">
-            Non-Veg
-            <input type="checkbox" name="type" id="type2">
-        </label>
-    </div>
-    <div>
-        <br>
-        <label for="description">
-            <textarea name="" id="description" cols="30" rows="10"
-                placeholder="Any additional feature can be mentioned here"></textarea>
+        <section>
+            <form>
+                <div>
+                    <label for="name">
+                        Enter your name &rarr;
+                        <input type="text" id="name" placeholder="name">
+                    </label>
+                    <br>
+                    <br>
+                    <label for="Destination">
+                        Enter your Destination &rarr;
+                        <input type="text" id="Destination" placeholder="destination">
+                    </label>
+                </div>
+                <br>
 
-        </label>
-        <p></p>
-        <input name = "form" type="submit" value="Register"/>
-    </div>
+                <div>
+                    <select>
+                        <option value="">First Class</option>
+                        <option value="">Second Class</option>
+                        <option value="">Third Class</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="male">
+                        <input type="radio" name="gender" id="male">
+                        Male</label>
+                    <label for="Female">
+                        <input type="radio" name="gender" id="Female">
+                        Female</label>
+                    <label for="Other">
+                        <input type="radio" name="gender" id="Other">
+                        Other</label>
+                    <br>
+                    <br>
+                    <label for="Veg">
+                        <input type="checkbox" id="Veg">Veg
+                    </label>
+                    <label for="Nonveg">
+                        <input type="checkbox" id="Nonveg">Nonveg
+                    </label>
+                </div>
+                <br>
 
+                <div>
+                    <textarea cols="30" rows="10" placeholder="add Text"></textarea>
+                    <br>
+                    <br>
+                    <input type="sumbit" value="Register">
+                </div>
+
+            </form>
+        </section>
+
+    </main>
     <hr>
     <footer>
-        <strong>Terms and Conditions :</strong>
-    
-        <ul style="color: #ffd8d5;">
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, quidem. Quos exercitationem debitis</li>
+        <strong>Terms and conditions</strong>
+        <ul style="color: orange;">
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore blanditiis magnam deleniti id in magni.
             <ul>
                 <li>Lorem, ipsum dolor.</li>
                 <li>Lorem, ipsum dolor.</li>
+
             </ul>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, odio!</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, sit.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, amet.</li>
+            </li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, nesciunt?</li>
+            
         </ul>
-
+        <pre>                          Rights reserved <sup>&copy;</sup></pre>
+        <a href="#">back to top &uarr;</a>
     </footer>
-
-
-    <pre>                      Rights reversed <sup>&copy;</sup></pre>
-
-    <a href="#">Back to top &uarr;</a>
-
-
-
-
-
-
 </body>
 
 </html>
