@@ -1,0 +1,19 @@
+div {
+    color: blue;
+    background-color: oldlace;
+    border: 3px solid red;
+
+}
+
+h1 {
+
+    background-color: chartreuse;
+
+}
+span{
+    background-color: lightblue;
+    border: 3px solid red;
+}
+pre{
+    border: 10px solid yellow;
+}

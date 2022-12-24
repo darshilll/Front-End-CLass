@@ -1,0 +1,22 @@
+/* *{
+    color: red;
+} */
+
+/* div li{
+    color: red;
+} */
+
+/* div > p > span {
+    color: red;
+} */
+/* .some-class{
+    color: red;
+} */
+
+/* .m1.m2{
+    color: red;
+} */
+.c2 + div{
+    color: red;;
+}
+
