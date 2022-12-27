@@ -1,8 +1,75 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-body{
+
+body {
     background-color: gray;
+    padding-top: 13em;
+    padding-left: 4em;
+}
+
+.swtich {
+    display: inline-block;
+    border: 2px solid rgb(168, 168, 168);
+    height: 8rem;
+    width: 3rem;
+    padding-top: 3em;
+    margin-bottom: -4rem;
+}
+
+
+
+.button {
+    
+
+    background-color: red;
+    height: 1rem;
+    width: 1rem;
+    margin: auto;
+
+
+}
+
+.wire {
+    display: inline-block;
+    background-color: black;
+    height: 2px;
+    width: 35rem;
+}
+.completelamp{
+    display: inline-block;
+    width: fit-content;
+}
+.lamp {
+    background-color: olive;
+    height: 10rem;
+    width: 10rem;
+   
+}
+.stand{
+    background-color: black;
+    height: 5rem;
+    width: 1rem;
+    margin: auto;
+}
+.base{
+    background-color: orange;
+    height: 2rem;
+    width: 10rem;
+    
+}
+.swtich:hover{
+    border: 2px solid white;
+    cursor: pointer;
+}
+.swtich:active{
+    opacity: 0.5;
+}
+.swtich:active + .wire{
+    background-color: white;
+}
+.swtich:active ~.completelamp > .lamp{
+    background-color: yellow;
 }
