@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: grey;
+    padding: 10em 0;
+}
+.parent_container{
+    background-color: white;
+    cursor: pointer;
+    margin: auto;
+    width: fit-content;
+    padding: 0.5em;
+
+}
+.child{
+    display: inline-block;
+    height: 7rem;
+    width: 7rem;
+    
+    margin: 1rem;
+
+}
+.child1{
+    background-color: red;
+}
+.child2{
+    background-color: green;
+    display: none;
+}
+.parent_container:hover > .child1{
+    border: 5px solid black;
+
+}
+.parent_container:hover>.child2{
+    display: inline-block;
+}

@@ -16,7 +16,27 @@
 /* .m1.m2{
     color: red;
 } */
-.c2 + div{
+/* .c1 .c2{
     color: red;;
+} */
+
+/* .c1 > p{
+    color: red;
+} */
+
+/* .s2#the-one{
+    color: red;
+} */
+
+/* input[type="button1"]{
+    color: red;
+} */
+
+/* *{
+    color: red;
+
+} */
+#the-one >.c1.c2{
+    color: red;
 }
 

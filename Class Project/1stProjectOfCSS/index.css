@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* background-color: black; */
+    /* padding:2em; */
+    font-family: 'Aclonica', sans-serif;
+font-family: 'Montserrat', sans-serif;
+}
+.heading{
+    /* color: white; */
+    text-align: center;
+   
+}
+.one{
+    /* color: white; */
+    text-align: right;
+    padding: 2em;
+    word-spacing: 100px;
+}
+.content{
+    display: inline-block;
+    background-color: red;
+    
+    padding: 2em;
+    width: 49.5%;
+    margin: auto;
+}
+.content2{
+    display: inline-block;
+    background-color: orange;
+    padding: 2em;
+    width: 49.5%;
+    margin: auto;
+}
+
+

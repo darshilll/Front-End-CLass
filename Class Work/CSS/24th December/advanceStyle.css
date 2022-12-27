@@ -1,0 +1,24 @@
+.main p{
+    color: blue;
+}
+
+.div-1 > ul > span+span{
+    color: yellow;
+}
+.div-2+span+span{
+    color: red;
+}
+.div-3 ~ span > .nested+.nested{
+    color: green;
+}
+.div-12 .span-12 > h1+h1{
+    color: orange;
+}
+.div-2 ~ span+span{
+    color: lime;
+}
+.section_difficult h1~*{
+    color: aqua;
+
+}
+
