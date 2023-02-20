@@ -1,0 +1,16 @@
+const userName = prompt("Enter your Name: ");
+console.log(userName);
+const monthlyInvestment = prompt("enter your monthly investment");
+console.log(monthlyInvestment);
+const futureYear = prompt("Enter your Future year");
+console.log(futureYear);
+const currentYear = 2023;
+const year = futureYear - currentYear;
+const months = 12;
+const multi = year * months;
+const totalInvestment = multi * monthlyInvestment;
+console.log(totalInvestment);
+alert(`Hey ${userName},your total investment by the end of ${futureYear} will be ₹${totalInvestment}.`);
+const additional = totalInvestment*0.15;
+const add = additional + totalInvestment;
+alert(`₹${add}`);

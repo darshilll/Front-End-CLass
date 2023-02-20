@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    background-image: url(./gaming\ website/webb-dark.png);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.flex_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.btn {
+    padding: .5em 1em;
+    border: none;
+    background-color: transparent;
+
+    user-select: none;
+    border-radius: 10px;
+
+    font: inherit;
+    color: inherit;
+
+    cursor: pointer;
+}
+
+.white_container {
+    padding: 1em 3em;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(92, 92, 92, .8);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.index {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    font-size: large;
+    font-style: italic;
+    font-weight: bold;
+
+
+}
+
+.navigation>*:hover {
+    opacity: .6;
+}
+
+.navigation>* {
+    transition: opacity 500ms ease-in-out;
+}
+
+.glow {
+    box-shadow: 0px 5px 10px 0 rgb(0 255 255 /70%);
+}
+
+.profile {
+    background-color: white;
+    height: 3rem;
+    width: 3rem;
+    position: relative;
+    border-radius: 50%;
+}
+
+.person {
+    color: black;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: absolute;
+    padding: 2em;
+    right: -40%;
+    top: 60%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+
+}
+
+.dropdown>* {
+    border: 2px solid white;
+    padding: 1em 3.5em;
+    border-radius: 10px;
+    border-bottom: none;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 500ms ease-in-out;
+
+}
+
+.dropdown>*:last-child {
+    border-bottom: 2px solid white;
+
+}
+
+.profile:hover>.dropdown {
+    visibility: visible;
+    opacity: 1;
+
+}
+
+.dropdown:hover {
+    visibility: visible;
+    opacity: 1;
+
+}
+
+.dropdown>*:hover {
+    background-color: rgba(75, 184, 184, .8);
+
+}
+
+.empty_space {
+    padding: 2.8em 0;
+}
+
+.gaming_image {
+    width: 60%;
+    margin: auto;
+}
+
+.gaming_image img {
+    width: 100%;
+}
+
+.hero_title {
+    width: 50%;
+    margin: -3rem auto 0;
+    text-align: center;
+    font-size: 4vw;
+    line-height: 1.5;
+    transform: skewY(-6deg);
+    position: sticky;
+    top: 20%;
+
+}
+
+.hero_title span {
+    background-color: rgba(128, 128, 128, .7);
+    border: 3px solid aqua;
+    padding: .2em .5em;
+}
+
+.hovering_container {
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.hover_box {
+    padding: 10em 5em;
+    background-size: cover;
+    background-color: white;
+    background-image: url(./gaming\ website/gaming-studio.jpg);
+    opacity: 0;
+}
+
+.hover_box:nth-child(1) {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.hover_box:nth-child(2) {
+    background-position: 25%;
+    transition: opacity 300ms ease-in-out;
+}
+
+.hover_box:nth-child(3) {
+    background-position: 50%;
+    transition: opacity 500ms ease-in-out;
+}
+
+.hover_box:nth-child(4) {
+    background-position: 75%;
+    transition: opacity 700ms ease-in-out;
+}
+
+.hover_box:nth-child(5) {
+    background-position: 100%;
+    transition: opacity 900ms ease-in-out;
+}
+
+.hover_box:nth-child(1):hover~.hover_box {
+    opacity: 1;
+}
+
+.overlay_section {
+    padding: 4em;
+    color: rgb(7, 179, 203);
+
+}
+
+.text {
+    font-weight: bolder;
+    font-size: 2rem;
+    font-style: italic;
+    text-shadow: 0 3px 2px;
+    text-align: center;
+
+
+}
+
+.images_container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+
+
+}
+
+.games {
+    width: 30%;
+    height: 12rem;
+    position: relative;
+    border-radius: 13px;
+    background-image: url(./gaming\ website/Minecraft-dark-screen.jpg);
+    background-color: blue;
+    background-size: cover;
+
+    text-align: center;
+    transition: outline 300ms ease-in-out 400ms, 
+    outline-offset 300ms ease-in-out 400ms;
+
+
+}
+
+.games:nth-child(2) {
+    /* background-position: center; */
+    background-image: url(./gaming\ website/league-of-legendsimage.jpg);
+}
+
+.games:nth-child(3) {
+    background-image: url(./gaming\ website/Red_Dead_Redemption_II.jpg);
+}
+
+.games::before {
+    content: '';
+    background-color: rgba(225,255,255,0.3);
+    border-radius: 12px;
+    
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    
+    transform:scaleY(0);
+    transition: transform 400ms ease-in-out;
+    
+}
+
+
+
+.games>*{
+    opacity: 0;
+   transition: opacity 400ms ease-in-out 400ms;
+   z-index: 1;
+}
+
+
+.genre_title {
+    font-size: xx-large;
+    margin-bottom: 1.5rem;
+    
+
+}
+
+.btn_learn_more {
+    background-color: rgba(128, 128, 128, .8);
+    font-size: larger;
+    font-weight: bolder;
+
+}
+.games:hover {
+    outline: 3px solid white;
+    outline-offset: 7px;
+}
+.games:hover>*{
+    opacity: 1;
+}
+
+.games:hover::before{
+   transform: scaleY(1);
+}
+
+.extra{
+    background-color: rgba(92, 92, 92, .8);
+    padding: 1em ;
+    text-align: center;
+    
+    
+}

@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: darkblue;
+    background-image: url(./Cricket\ project\ img/d.png);
+    background-size: contain;
+}
+
+/* resets */
+a {
+    text-decoration: none;
+}
+
+/* utility classes */
+
+.btn {
+    padding: .5rem 1rem;
+
+}
+
+.underline {
+    text-decoration: 4px underline;
+
+}
+
+.text_center {
+    text-align: center;
+
+}
+
+/* component classes */
+.tickets {
+    color: lime;
+}
+
+.tickets_margin {
+    margin: 1rem 0;
+}
+
+.parent_container {
+    background-color: blue;
+    background-image: url(./Cricket\ project\ img/oriental-tiles.png);
+
+    display: flex;
+    padding: 3rem 5rem;
+}
+
+.large_container {
+    padding: 1rem;
+    width: 60%;
+    line-height: 1.7;
+}
+
+.large_container>* {
+    margin-bottom: 1rem;
+
+}
+
+.slider_container {
+    width: 40%;
+    height: 24rem;
+    border: 2px solid white;
+    padding: 1rem;
+    overflow: auto;
+}
+
+.match_search {
+    height: 3rem;
+    padding: .5rem 1rem;
+    background: none;
+    font-size: 1.2rem;
+    font-weight: bolder;
+
+    border: none;
+    outline: none;
+    border-bottom: 2px solid white;
+    text-overflow: ellipsis;
+
+
+}
+
+.match_search:focus {
+    width: 100%;
+    border: 2px solid white;
+
+
+}
+
+.image_title {
+    background-image: url(./Cricket\ project\ img/cricket_image.jpg);
+    background-color: blue;
+    padding: 3rem 0;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    user-select: none;
+    margin: 1rem 0 .5rem;
+}
+
+.btn_book_ticket {
+    background-color: yellow;
+    opacity: 0;
+    font-weight: bolder;
+
+}
+
+.image_title:hover {
+    opacity: .5;
+    font-weight: lighter;
+}
+
+.image_title:hover+.btn_book_ticket {
+    opacity: 1;
+}
+
+.btn_book_ticket:hover {
+
+    opacity: 1;
+}
+
+.participants_heading {
+    font-size: x-large;
+
+}

@@ -64,12 +64,12 @@ body {
     border: 2px solid white;
     cursor: pointer;
 }
-.swtich:active{
+.swtich:focus{
     opacity: 0.5;
 }
-.swtich:active + .wire{
+.swtich:focus + .wire{
     background-color: white;
 }
-.swtich:active ~.completelamp > .lamp{
+.swtich:focus ~.completelamp > .lamp{
     background-color: yellow;
 }

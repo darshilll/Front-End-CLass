@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: .5em;
+    font-family: "Montserrat" , sans-serif;
+    font-style: italic;
+
+}
+/* Resets */
+a{
+    text-decoration: none;
+}
+/* utility Classes */
+.underline {
+    text-decoration: 2px underline yellow;
+}
+
+.center {
+    margin: auto;
+    width: fit-content;
+}
+
+.textCenter {
+    text-align: center;
+} 
+.monochramtic{
+    background-color: black;
+    color: white;
+}
+
+/* compeonent classes */
+.navigation {
+    background-color: rgb(251, 121, 126);
+    padding: 1em;
+    text-align: end;
+}
+
+.navigation>ul>li {
+    display: inline-block;
+    margin: 0 2.5rem ;
+
+}
+.navigation a{
+    color: white;
+}
+.boxesContainer > *{
+    display: inline-block;
+    width: 49.5%;
+    padding: 1em 1em 2.5em;
+
+
+}
+.parent1{
+    background-color: rgb(162, 27, 32);
+}
+.parent2{
+    background-color: rgb(159, 68, 0);
+}
+.child1{
+    background-color: white;
+}
+.space{
+    margin: ;
+}

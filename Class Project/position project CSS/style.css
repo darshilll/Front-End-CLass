@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: blue;
+    background-image: url(background.png);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    font-family: 'Nunito Sans ', sans-serif;
+    color: white;
+    padding: 0 1em;
+}
+
+/* Resets */
+a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+li {
+    list-style: none;
+}
+
+.flex_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_center {
+    text-align: center;
+}
+
+/* utility class */
+.white_padding_border {
+    border: 3px solid white;
+    padding: 2rem;
+}
+
+/* component class */
+.navigation_bar {
+    gap: 5rem;
+    padding: 2rem;
+    background-color: rgba(0, 255, 255, .8);
+    position: fixed;
+    width: calc(100% - 2em);
+    top: 0;
+
+}
+
+.empty_spacing {
+    padding: 2.5rem;
+}
+
+.first_section {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+
+}
+
+.first_div {
+
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 70%;
+    gap: 2rem;
+}
+
+.hidden_numbers_containers {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .4);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    opacity: 0;
+    height: 0;
+    transition: opacity 500ms ease-in-out,
+        height 300ms ease-in-out;
+}
+
+.hidden_number_container {
+    width: 5rem;
+    height: 5rem;
+    position: relative;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.number {
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.white_box {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transition: left 500ms ease-in-out;
+
+}
+
+.hidden_number_container:hover>.white_box {
+    left: 100%;
+}
+
+.hidden_number_container:nth-child(4):hover>.white_box {
+    left: -100%;
+}
+
+.hidden_number_container:hover~.overlay {
+    opacity: 1;
+    height: 100%;
+}
+
+.first_empty_space {
+    flex-grow: 1;
+
+}
+
+.second_div {
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    height: fit-content;
+    position: sticky;
+    top: 15%;
+}
+
+.lime_box {
+    background-color: lime;
+    width: calc(50% - .5rem);
+    height: 5rem;
+}
+
+.lime_box:nth-child(3) {
+    width: 100%;
+}
+
+.second_section {
+    height: 50rem;
+    margin-top: 1rem;
+}
+
+.chat_box_container {
+    background-color: blueviolet;
+    width: fit-content;
+    cursor: pointer;
+    position: fixed;
+    top: 78%;
+    right: 2%;
+    z-index: 1000;
+
+}
+
+.chat_image {
+    font-size: 6rem;
+}
+
+.popup_container {
+    background-color: rgb(238, 130, 238);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 500ms ease-in-out;
+
+}
+
+.chat_box_container:hover>.popup_container {
+    opacity: 1;
+    visibility: visible;
+}

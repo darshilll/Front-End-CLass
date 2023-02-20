@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 7em;
+
+}
+
+.main {
+    display: flex;
+    border: 5px solid yellow;
+    width: 70rem;
+    height: 30rem;
+
+}
+
+.section {
+    margin: auto;
+    border: 5px solid yellow;
+    width: 34rem;
+    height: 27rem;
+}
+
+.inside1 {
+    margin: 20px;
+    border: 5px solid yellow;
+    width: 30rem;
+    height: 3rem;
+}
+
+.inside2 {
+    margin: auto;
+    border: 5px solid yellow;
+    width: 32rem;
+    height: 20rem;
+}
