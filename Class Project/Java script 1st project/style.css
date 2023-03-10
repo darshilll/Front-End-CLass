@@ -1,29 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,500&display=swap');
+
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --ff-primary: 'Poppins', sans-serif;
+
+    --clr-light-100: white;
+    --clr-light-600: rgba(255, 255, 255, 0.3);
+    --clr-dark-100: gray;
+    --clr-dark-900: black;
+
+    --clr-primary-100: lightblue;
+    --clr-primary-opacity: rgba(173, 216, 230, 0.781);
+    --clr-primary-500: #60b4f5bd;
+
+    --fw-light: 300;
+    --fw-semi-bold: 600;
+    --fw-bold: 900;
+
+    --border-rad1: 10px;
+
+    --border1: 2px solid rgba(0, 0, 0, 0.082);
+
+    --transition-1: 300ms ease-in-out;
+    --transition-2: 300ms ease-in-out 100ms;
+
+    --shadow-1: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    --shadow-2: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+    --monochrome-shadow: 0 2px 7px rgba(255, 255, 255, 0.4);
+
+    --linear-gradient-direction: to top left;
+    --primary-gradient-background: linear-gradient(var(--linear-gradient-direction), var(--clr-primary-100), var(--clr-primary-500));
+}
+
+/* Applying a linear gradient to the "body" causes repetition in the background image, in mobile devices. So I applied the same styling to "html" (after making a few Google searches). */
+html {
+    background-image: var(--primary-gradient-background);
+    background-attachment: fixed;
 }
 
 body {
-    background-color: rgb(148, 204, 241);
+    padding: 1em;
 
-
+    font-family: var(--ff-primary);
+    color: var(--clr-dark-900);
+    font-weight: var(--fw-semi-bold);
 }
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+/* p {
+    line-height: 1.5;
+    font-size: 1.2rem;
+} */
 
 .flex_center {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
-.restartButton {
-    background-color: rgb(247, 251, 255);
+.btn {
     border: none;
-    height: 4rem;
-    width: 8rem;
+    /* outline: none; */
+    background: none;
+    line-height: 1;
+    font-family: inherit;
+
+    padding: 1.5em 3em;
     cursor: pointer;
 
+    transition: all var(--transition-1);
+    border-radius: 3px;
+    user-select: none;
+}
+
+.btn:active {
+    transform: translateY(5px);
+    box-shadow: var(--shadow-2);
+}
+
+.input {
+    padding: .5em;
+
+    border: none;
+    outline: none;
+    border-radius: var(--border-rad1);
+
+    text-align: center;
+    background-color: var(--clr-light-600);
+    transition: all var(--transition-1);
+}
+
+.input:focus {
+    outline: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+input::placeholder {
+    color: var(--clr-dark-100);
+}
+.main {
+    display: flex;
+}
+
+.section {
+    height: calc(100vh - 2em);
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 2em;
+}
+
+.section-2 {
+    align-items: center;
+    gap: 2rem;
+}
+
+.user_interact_container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.input_redeem {
+    width: 15rem;
+    padding: 1em;
+    cursor: default;
+
+    opacity: 0;
+    transition: opacity var(--transition-1), background-color var(--transition-1), outline var(--transition-1);
+}
+
+.btn_restart {
+    box-shadow: var(--shadow-1);
+    background-color: var(--clr-light-100);
+}
+
+.btn_restart:hover {
+    opacity: .92;
+}
+
+.output_container {
+    font-size: 1.2rem;
+}
+
+.output_container>* {
+    margin: 3rem 0;
+}
+
+.output {
+    margin-left: .2rem;
+}
+
+.random_number_container {
+    padding: 1em 2em;
+
+    background-image: linear-gradient(var(--linear-gradient-direction), var(--clr-primary-100), var(--clr-primary-500));
+    color: white;
+
+    font-size: 1.7rem;
+    border: 1.5px solid var(--clr-primary-500);
+    border-radius: var(--border-rad1);
+
+    box-shadow: var(--shadow-1);
+}
+
+.user_numbers_container {
+    width: 70%;
+    flex-wrap: wrap;
+    gap: 1.5rem 3rem;
+}
+
+.number {
+    height: 4rem;
+    width: 4rem;
+}
+
+.number_styling {
+    user-select: none;
+    border-radius: 50%;
+    background-color: var(--clr-light-600);
+    cursor: pointer;
+    transition: transform var(--transition-1);
+}
+
+/* If you wish to make your UI look exactly like mine, uncomment the below lines. However, cuz the code below uses grid, it's not necessary to understand what's going on.  */
+/* .user_numbers_container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+.number {
+    height: min(8vw, 4rem);
+    width: min(8vw, 4rem);
+    justify-self: center;
+}
+.number:nth-child(10) {
+    grid-column: 2 / 3;
+    grid-column: 2 / span 1;
+} */
+
+.number:active {
+    transform: translateY(3px);
 }
